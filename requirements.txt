@@ -5,7 +5,7 @@ pandas
 seaborn
 
 albumentations
-pytesseract
+easyocr
 scikit-image
 pillow
 timm
