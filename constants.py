@@ -61,43 +61,49 @@ IMG_SIZE_TO_DIMENSIONS = {
 # Format: {dimension: {'map1': coords for top-left axial map, ...}}
 REFRACTIVE_MAP_COORDS = {
     (740, 1200): {
-        'map1': {'row1': 110, 'row2': 340, 'col1': 420, 'col2': 650},
+        'map1': {'row1':110, 'row2':340, 'col1':843, 'col2':1073},
         'circle_loc': {'cir_x': 115, 'cir_y': 115, 'cir_radius': 111}
     },
     (758, 1200): {
-        'map1': {'row1': 115, 'row2': 387, 'col1': 431, 'col2': 703},
+        'map1': {'row1':115, 'row2':387, 'col1':827, 'col2':1099},
         'circle_loc': {'cir_x': 136, 'cir_y': 136, 'cir_radius': 126}
     },
     (820, 1200): {
-        'map1': {'row1': 124, 'row2': 416, 'col1': 441, 'col2': 733},
+        'map1': {'row1':124, 'row2':416, 'col1':820, 'col2':1112},
         'circle_loc': {'cir_x': 146, 'cir_y': 146, 'cir_radius': 138}
     },
     (838, 1200): {
-        'map1': {'row1': 128, 'row2': 424, 'col1': 447, 'col2': 741},
+        'map1': {'row1':128, 'row2':424, 'col1':821, 'col2':1115},
         'circle_loc': {'cir_x': 146, 'cir_y': 148, 'cir_radius': 140}
     },
     (840, 1200): {
-        'map1': {'row1': 128, 'row2': 424, 'col1': 447, 'col2': 743},
+        'map1': {'row1':128, 'row2':424, 'col1':821, 'col2':1117},
         'circle_loc': {'cir_x': 148, 'cir_y': 148, 'cir_radius': 140}
     },
     (894, 1600): {
-        'map1': {'row1': 132, 'row2': 448, 'col1': 559, 'col2': 875},
+        'map1': {'row1':132, 'row2':448, 'col1':1117, 'col2':1433},
         'circle_loc': {'cir_x': 158, 'cir_y': 158, 'cir_radius': 150}
     },
     (858, 1200): {
-        'map1': {'row1': 220, 'row2': 484, 'col1': 433, 'col2': 697},
+        'map1': {'row1':220, 'row2':484, 'col1':830, 'col2':1094},
         'circle_loc': {'cir_x': 132, 'cir_y': 132, 'cir_radius': 126}
     },
     (904, 1200): {
-        'map1': {'row1': 190, 'row2': 490, 'col1': 445, 'col2': 741},
+        'map1': {'row1':190, 'row2':490, 'col1':819, 'col2':1115},
         'circle_loc': {'cir_x': 147, 'cir_y': 150, 'cir_radius': 140}
     },
     (910, 1200): {
-        'map1': {'row1': 124, 'row2': 424, 'col1': 445, 'col2': 741},
+        'map1': {'row1':124, 'row2':424, 'col1':819, 'col2':1115},
         'circle_loc': {'cir_x': 147, 'cir_y': 150, 'cir_radius': 140}
     },
+    (912, 1202): {
+        'map1': {'row1':202, 'row2':492, 'col1':819, 'col2':1115},
+        'circle_loc': {'cir_x': 147, 'cir_y': 150, 'cir_radius': 140}
+    },
+
+
     (940, 1200): {
-        'map1': {'row1': 230, 'row2': 526, 'col1': 445, 'col2': 741},
+        'map1': {'row1':230, 'row2':526, 'col1':819, 'col2':1115},
         'circle_loc': {'cir_x': 147, 'cir_y': 147, 'cir_radius': 140}
     }
 }
@@ -105,39 +111,45 @@ REFRACTIVE_MAP_COORDS = {
 # Axial map coordinates for SELECTABLE images
 SELECTABLE_MAP_COORDS = {
     (758, 1200): {
-        'map1': {'row1': 115, 'row2': 387, 'col1': 431, 'col2': 703},
+        'map1': {'row1':115, 'row2':387, 'col1':827, 'col2':1099},
         'circle_loc': {'cir_x': 136, 'cir_y': 136, 'cir_radius': 126}
     },
     (820, 1200): {
-        'map1': {'row1': 94, 'row2': 386, 'col1': 441, 'col2': 733},
+        'map1': {'row1':94, 'row2':386, 'col1':820, 'col2':1112},
         'circle_loc': {'cir_x': 146, 'cir_y': 146, 'cir_radius': 142}
     },
     (838, 1200): {
-        'map1': {'row1': 128, 'row2': 424, 'col1': 447, 'col2': 741},
+        'map1': {'row1':128, 'row2':424, 'col1':821, 'col2':1115},
         'circle_loc': {'cir_x': 146, 'cir_y': 148, 'cir_radius': 140}
     },
     (840, 1200): {
-        'map1': {'row1': 94, 'row2': 390, 'col1': 447, 'col2': 743},
+        'map1': {'row1':94, 'row2':390, 'col1':821, 'col2':1117},
         'circle_loc': {'cir_x': 148, 'cir_y': 148, 'cir_radius': 140}
     },
     (894, 1600): {
-        'map1': {'row1': 93, 'row2': 419, 'col1': 554, 'col2': 880},
+        'map1': {'row1':93, 'row2':419, 'col1':1112, 'col2':1438},
         'circle_loc': {'cir_x': 164, 'cir_y': 163, 'cir_radius': 158}
     },
     (858, 1200): {
-        'map1': {'row1': 220, 'row2': 484, 'col1': 433, 'col2': 697},
+        'map1': {'row1':220, 'row2':484, 'col1':830, 'col2':1094},
         'circle_loc': {'cir_x': 132, 'cir_y': 132, 'cir_radius': 126}
     },
     (904, 1200): {
-        'map1': {'row1': 190, 'row2': 490, 'col1': 445, 'col2': 741},
+        'map1': {'row1':190, 'row2':490, 'col1':819, 'col2':1115},
         'circle_loc': {'cir_x': 147, 'cir_y': 150, 'cir_radius': 140}
     },
     (910, 1200): {
-        'map1': {'row1': 94, 'row2': 394, 'col1': 445, 'col2': 741},
+        'map1': {'row1':94, 'row2':394, 'col1':819, 'col2':1115},
         'circle_loc': {'cir_x': 147, 'cir_y': 150, 'cir_radius': 140}
     },
+    (912, 1202): {
+        'map1': {'row1':172, 'row2':462, 'col1':819, 'col2':1115},
+        'circle_loc': {'cir_x': 147, 'cir_y': 150, 'cir_radius': 140}
+    },
+
+
     (940, 1200): {
-        'map1': {'row1': 230, 'row2': 526, 'col1': 445, 'col2': 741},
+        'map1': {'row1':230, 'row2':526, 'col1':819, 'col2':1115},
         'circle_loc': {'cir_x': 147, 'cir_y': 147, 'cir_radius': 140}
     }
 }

@@ -52,7 +52,7 @@ def standardize_image(img: np.ndarray, output_size: int = 224) -> np.ndarray:
 
 
 def clean_axial_map(img: np.ndarray, circle_params: Dict) -> Tuple[np.ndarray, np.ndarray]:
-    """Clean axial curvature map by removing artifacts."""
+    """Clean anterior curvature map by removing artifacts."""
     cir_x = circle_params['cir_x']
     cir_y = circle_params['cir_y']
     cir_radius = circle_params['cir_radius']

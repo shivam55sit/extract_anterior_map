@@ -42,7 +42,7 @@ def process_uploaded_image(uploaded_file) -> dict:
 
 
 def main():
-    st.title('Axial Map Extractor')
+    st.title('Anterior Map Extractor')
     st.write('Upload a Pentacam / Oculyzer image to extract and clean the axial curvature map.')
 
     uploaded = st.file_uploader('Choose an image', type=['png', 'jpg', 'jpeg'])
@@ -77,25 +77,25 @@ def main():
         axial_std = result.get('axial_map_224')
 
         if axial_full is not None:
-            st.subheader('Axial map (full)')
+            st.subheader('Anterior map (full)')
             st.image(bgr_to_pil(axial_full), use_column_width=True)
 
             # Download button
             try:
                 full_bytes = to_png_bytes(axial_full)
-                st.download_button('Download full axial map', data=full_bytes,
-                                   file_name='axial_full.png', mime='image/png')
+                st.download_button('Download full anterior map', data=full_bytes,
+                                   file_name='anterior_full.png', mime='image/png')
             except Exception as e:
                 st.warning(f'Could not prepare download: {e}')
 
         if axial_std is not None:
-            st.subheader('Axial map (standardized 224x224)')
+            st.subheader('Anterior map (standardized 224x224)')
             st.image(bgr_to_pil(axial_std), use_column_width=False)
 
             try:
                 std_bytes = to_png_bytes(axial_std)
-                st.download_button('Download standardized axial map', data=std_bytes,
-                                   file_name='axial_224.png', mime='image/png')
+                st.download_button('Download standardized anterior map', data=std_bytes,
+                                   file_name='anterior_224.png', mime='image/png')
             except Exception as e:
                 st.warning(f'Could not prepare download: {e}')
 
