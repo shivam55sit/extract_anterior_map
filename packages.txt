@@ -1,2 +1,2 @@
-libgl13.3
+libgl1
 
